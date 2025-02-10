@@ -1,0 +1,28 @@
+/* index.css (or a Styled Components GlobalStyle) */
+body {
+  font-family: 'Your Chosen Font', sans-serif; /* Replace with your font */
+  margin: 0;
+  padding: 0;
+  background-color: #fffaf0; /* Light, romantic background color (linen) */
+  color: #333; /* Dark text for readability */
+  line-height: 1.6; /* Improve readability */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+h1, h2, h3 {
+  font-family: 'Another Font', serif; /* Replace with your heading font */
+  color: #e44d26; /* Valentine's Day red */
+  text-align: center;
+}
+
+a {
+  color: #e44d26;
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+a:hover {
+  color: #d0421f;
+}
+
+/* Add more global styles as needed */

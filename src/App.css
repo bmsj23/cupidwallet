@@ -1,0 +1,198 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: (135deg, #ce0d13, #fad0c4);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #532d2d;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Button Styling */
+.next-button, .prev-button {
+  background: #ff4e50;
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  font-size: 18px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s;
+  text-transform: none;
+  margin-top: 20px;
+}
+
+.next-button:hover, .prev-button:hover {
+  background: #fc6767;
+  transform: scale(1.1);
+}
+
+/* Hero Section */
+.hero-section {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hero-text {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Reasons Section */
+.reasons-section {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+}
+
+.reasons-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.reasons-list {
+  list-style: none;
+  padding: 0;
+  font-size: 1.2rem;
+}
+
+.reasons-list li {
+  margin: 10px 0;
+}
+
+/* Gallery Section */
+.gallery-section {
+  max-width: 1000px; /* Adjust to allow more images to fit */
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+
+
+.image-carousel {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  transition: transform 0.3s ease;
+  will-change: transform;
+}
+
+.gallery-image {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.gallery-image:hover {
+  transform: scale(1.1);
+}
+
+/* Answer Section */
+.answer-section {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 1000px;
+  margin-top: 30px;
+}
+
+.answer-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.valentine-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.yes-button {
+  background: #ff4e50;
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  font-size: 18px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s;
+}
+
+.no-button {
+  background: #252424;
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  font-size: 18px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s;
+}
+
+.yes-button:hover, .no-button:hover {
+  background: #fc6767;
+  transform: scale(1.1);
+}
+
+.email-input {
+  width: 80%;
+  max-width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ff4e50;
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 10px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.email-input:focus {
+  border-color: #fc6767;
+}
+
+.submit-button {
+  background: #ff4e50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+.submit-button:hover {
+  background: #fc6767;
+  transform: scale(1.05);
+}
