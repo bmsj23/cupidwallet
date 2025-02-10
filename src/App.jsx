@@ -162,7 +162,17 @@ const ImageGallery = () => {
 
 const AnswerSection = ({ accepted, setAccepted }) => {
 
-
+  const handleYesClick = async () => {
+    setAccepted(true);
+  
+    try {
+      const response = await axios.post('http://localhost:3000/send-email');
+      console.log(response.data); // logs the response from the server
+    } catch (error) {
+      console.error('Error sending email:', error);
+    }
+  };
+  
   const handleNoClick = () => alert("Wrong answer, try again! 😏");
 
   return (
