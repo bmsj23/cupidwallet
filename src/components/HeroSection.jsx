@@ -1,6 +1,11 @@
 // HeroSection.jsx
 import React from 'react';
-import styled, { keyframes } from 'styled-components';
+//import styled  from 'styled-components';
+//import { keyframes } from 'styled-components';
+import styled from "styled-components/dist/styled-components.cjs.js";
+import {keyframes} from "styled-components/dist/styled-components.cjs.js";
+
+
 
 const fadeIn = keyframes`
   from {

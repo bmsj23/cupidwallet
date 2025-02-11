@@ -1,12 +1,14 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// https://vite.dev/config/
+import commonjs from 'vite-plugin-commonjs';
+
+
 export default defineConfig({
-  plugins: [react()],
-  build: {
-    rollupOptions: {
-      external: ['styled-components']
+  plugins: [react(), commonjs()],
+  resolve: {
+    alias: {
+      'styled-components': 'styled-components'
     }
   }
 });
